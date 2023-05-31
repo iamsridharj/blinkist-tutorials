@@ -148,7 +148,7 @@ Error generating stack: `+l.message+`
   line-height: 5rem;
   text-decoration: underline;
   cursor: pointer;
-`,V0=()=>{const e=fs();return $.jsx($.Fragment,{children:$.jsxs(B0,{children:[" ",$.jsx(U0,{src:$0,onClick:()=>e("/")})," ",$.jsx(W0,{onClick:()=>e("/feature-toggles"),children:"Feature toggles"})]})})},H0=st.div`
+`,V0=()=>{const e=fs();return $.jsx($.Fragment,{children:$.jsxs(B0,{children:[" ",$.jsx(U0,{src:$0,onClick:()=>e("/books-list")})," ",$.jsx(W0,{onClick:()=>e("/feature-toggles"),children:"Feature toggles"})]})})},H0=st.div`
   margin: auto;
   padding-bottom: 10%;
   @media ${jo.desktop} {
