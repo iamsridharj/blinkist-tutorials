@@ -6,6 +6,7 @@ import {
   AB_VARIATION_TEST,
 } from "../../constants";
 import { SmallTextBold } from "../../components/Typography/Typography.styles";
+import Checkbox from "../../components/Checkbox/Checkbox";
 import { useAbTest } from "../../hooks/useAbTest";
 import { FeatureToggleSummary } from "./FeatureVariationControl.styles";
 import { capitalizeFirstLetter } from "../../utils/capitalizeFirstLetter";
@@ -19,11 +20,10 @@ const FeatureVariationControl = () => {
   return (
     <div>
       <h1>Feature toggles for Blog articles</h1>
-      <input
-        type="checkbox"
+
+      <Checkbox
         id={AB_VARIATION_COVER_PIC}
-        name={AB_VARIATION_COVER_PIC}
-        checked={
+        isChecked={
           featureVariation?.[AB_VARIATION_COVER_PIC] === AB_VARIATION_TEST ||
           false
         }
@@ -33,14 +33,11 @@ const FeatureVariationControl = () => {
             event.target.checked ? "test" : "control"
           )
         }
+        label="Show Book cover pic"
       />
-      <label htmlFor={AB_VARIATION_COVER_PIC}> Show Book cover pic</label>
-      <br />
-      <input
-        type="checkbox"
+      <Checkbox
         id={AB_VARIATION_BOOK_DESCRIPTION}
-        name={AB_VARIATION_BOOK_DESCRIPTION}
-        checked={
+        isChecked={
           featureVariation?.[AB_VARIATION_BOOK_DESCRIPTION] ===
             AB_VARIATION_TEST || false
         }
@@ -50,11 +47,8 @@ const FeatureVariationControl = () => {
             event.target.checked ? "test" : "control"
           )
         }
+        label="Show Book description"
       />
-      <label htmlFor={AB_VARIATION_BOOK_DESCRIPTION}>
-        {" "}
-        Show Book description
-      </label>
       <FeatureToggleSummary>
         <SmallTextBold>
           Website AB Type: {capitalizeFirstLetter(variation)}
