@@ -17,7 +17,7 @@ const ABTest: React.FC<ABTestProps> = ({
   const variation = useAbTest();
   const { featureVariation } = useContext(FeatureVariationContext);
 
-  const checkFeatureVariation = (): boolean => {
+  const isTestVariationEnabled = (): boolean => {
     if (featureVariationKey) {
       const result = featureVariationKey
         ? isTestVariation(featureVariation?.[featureVariationKey])
@@ -27,7 +27,7 @@ const ABTest: React.FC<ABTestProps> = ({
     return isTestVariation(variation);
   };
 
-  return checkFeatureVariation() ? test : control;
+  return isTestVariationEnabled() ? test : control;
 };
 
 export default ABTest;
