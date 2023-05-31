@@ -3,7 +3,6 @@ import { FeatureVariationContext } from "../../contexts/ABTestProvider";
 import {
   AB_VARIATION_BOOK_DESCRIPTION,
   AB_VARIATION_COVER_PIC,
-  AB_VARIATION_TEST,
 } from "../../constants";
 import { SmallTextBold } from "../../components/Typography/Typography.styles";
 import Checkbox from "../../components/Checkbox/Checkbox";
