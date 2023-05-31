@@ -12,7 +12,7 @@ const routes = [
     errorElement: <h1>Error page not found</h1>,
     children: [
       {
-        path: "/books-list",
+        path: "/blinkist-tutorials",
         element: renderLayout(<BlogsList />),
       },
       {
