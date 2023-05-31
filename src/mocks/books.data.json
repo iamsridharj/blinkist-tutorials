@@ -1,0 +1,49 @@
+{
+  "books": [
+    {
+      "id": "winAtWork",
+      "rating": "4.6",
+      "title": "Win at Work and Succeed at Life",
+      "cover_bg": "https://images.blinkist.io/images/books/60b4e3686cee070007c62a58/1_1/470.jpg",
+      "author": "Michael Hyatt and Megan Hyatt Miller",
+      "tag_line": "5 Principles to Free Yourself from the Cult of Overwork",
+      "description": "Win at Work and Succeed at Life (2021) explores the pitfalls of our long-hours work culture. It outlines how professionals can reclaim their personal lives and achieve a better work-life balance."
+    },
+    {
+      "id": "TheWorkLifeBalanceMyth",
+      "rating": "4.2",
+      "title": "The Work-Life Balance Myth",
+      "cover_bg": "https://images.blinkist.io/images/books/60ba26b86cee07000896dbdf/1_1/470.jpg",
+      "author": "David J. McNeff",
+      "tag_line": "Rethinking Your Optimal Balance for Success",
+      "description": "The Work-Life Balance Myth (2021) is a guide to managing stress and creating harmony across the key areas in your life using the Seven-Slice Method. Rather than divide your waking hours between work and life, the Seven-Slice Method recontextualizes life into seven key areas and demonstrates how spending time in each of them every day can help you overcome pressure and find peace."
+    },
+    {
+      "id": "BornToWin",
+      "title": "Born to Win",
+      "rating": "3.2",
+      "cover_bg": "https://images.blinkist.io/images/books/60b8b3316cee070007296f5a/1_1/470.jpg",
+      "author": "Zig Ziglar with Tom Ziglar",
+      "tag_line": "Find Your Success",
+      "description": "Born to Win (2012) teaches a simple but effective philosophy for success: you have to first plan and prepare to win, only then can you expect to win. The book demonstrates how to implement this philosophy, from establishing a vision and goals to equipping yourself for success. It also highlights the importance of thinking positively and nurturing your entire being."
+    },
+    {
+      "id": "turningPro",
+      "title": "Turning Pro",
+      "rating": "4",
+      "cover_bg": "https://images.blinkist.io/images/books/60a377546cee070007503349/1_1/470.jpg",
+      "author": "Steven Pressfield",
+      "tag_line": "Tap Your Inner Power and Create Your Life's Work",
+      "description": "Turning Pro (2012) sheds a light on why so many aspiring creatives and entrepreneurs fail to make their dreams a reality. It also explains how, by making a conscious decision to pursue your goals and reconfiguring your life, you can finally gain traction and embrace your true calling."
+    },
+    {
+      "id": "whatAreYouDoingInLife",
+      "rating": "3.9",
+      "title": "What Are You Doing with Your Life?",
+      "cover_bg": "https://images.blinkist.io/images/books/60b4e3686cee070007c62a58/1_1/470.jpg",
+      "author": "Jiddu Krishnamurti",
+      "tag_line": "Explore answers to some of life's most difficult questions",
+      "description": "What Are You Doing with Your Life (2001) attempts to answer some of life’s most important questions. From considering the role of happiness and personal transformation to the purpose of life itself, it sets out a philosophy to guide you through every stage of your journey."
+    }
+  ]
+}
