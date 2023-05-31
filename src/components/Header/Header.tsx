@@ -16,7 +16,7 @@ const Header = () => {
         {" "}
         <HeaderLogo
           src={BlinkistHeaderLogo}
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/books-list")}
         />{" "}
         <FeatureToggleWrapper onClick={() => navigate("/feature-toggles")}>
           Feature toggles
