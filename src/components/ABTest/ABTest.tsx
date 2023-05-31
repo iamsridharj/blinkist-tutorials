@@ -1,7 +1,7 @@
 import { ReactElement, useContext } from "react";
 import { useAbTest } from "../../hooks/useAbTest";
-import { AB_VARIATION_TEST } from "../../constants";
 import { FeatureVariationContext } from "../../contexts/ABTestProvider";
+import { isTestVariation } from "../../utils/checkABVariation";
 
 type ABTestProps = {
   test: ReactElement;
@@ -17,18 +17,17 @@ const ABTest: React.FC<ABTestProps> = ({
   const variation = useAbTest();
   const { featureVariation } = useContext(FeatureVariationContext);
 
-  const isTestFeatureVariation = (): boolean => {
+  const checkFeatureVariation = (): boolean => {
     if (featureVariationKey) {
       const result = featureVariationKey
-        ? featureVariation?.[featureVariationKey] === AB_VARIATION_TEST
+        ? isTestVariation(featureVariation?.[featureVariationKey])
         : false;
       return result;
     }
-    const result = variation === AB_VARIATION_TEST;
-    return result;
+    return isTestVariation(variation);
   };
 
-  return isTestFeatureVariation() ? test : control;
+  return checkFeatureVariation() ? test : control;
 };
 
 export default ABTest;

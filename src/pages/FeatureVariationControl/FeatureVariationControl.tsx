@@ -10,6 +10,7 @@ import Checkbox from "../../components/Checkbox/Checkbox";
 import { useAbTest } from "../../hooks/useAbTest";
 import { FeatureToggleSummary } from "./FeatureVariationControl.styles";
 import { capitalizeFirstLetter } from "../../utils/capitalizeFirstLetter";
+import { isTestVariation } from "../../utils/checkABVariation";
 
 const FeatureVariationControl = () => {
   const variation = useAbTest();
@@ -24,8 +25,7 @@ const FeatureVariationControl = () => {
       <Checkbox
         id={AB_VARIATION_COVER_PIC}
         isChecked={
-          featureVariation?.[AB_VARIATION_COVER_PIC] === AB_VARIATION_TEST ||
-          false
+          isTestVariation(featureVariation?.[AB_VARIATION_COVER_PIC]) || false
         }
         onChange={(event) =>
           assignFeatureVariation?.(
@@ -38,8 +38,8 @@ const FeatureVariationControl = () => {
       <Checkbox
         id={AB_VARIATION_BOOK_DESCRIPTION}
         isChecked={
-          featureVariation?.[AB_VARIATION_BOOK_DESCRIPTION] ===
-            AB_VARIATION_TEST || false
+          isTestVariation(featureVariation?.[AB_VARIATION_BOOK_DESCRIPTION]) ||
+          false
         }
         onChange={(event) =>
           assignFeatureVariation?.(
