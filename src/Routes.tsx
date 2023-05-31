@@ -12,7 +12,7 @@ const routes = [
     errorElement: <h1>Error page not found</h1>,
     children: [
       {
-        path: "/",
+        path: "/books-list",
         element: renderLayout(<BlogsList />),
       },
       {
@@ -25,7 +25,7 @@ const routes = [
       },
       {
         path: "*",
-        element: <Navigate to="/" replace />,
+        element: <Navigate to="/books-list" replace />,
       },
     ],
   },
