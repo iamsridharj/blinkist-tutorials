@@ -8,26 +8,21 @@ import { renderLayout } from "./components/Layout/Layout";
 
 const routes = [
   {
-    path: "/",
+    path: "/blinkist-tutorials",
+    element: renderLayout(<BlogsList />),
+  },
+  {
+    path: "/feature-toggles",
+    element: renderLayout(<FeatureVariationControl />),
+  },
+  {
+    path: "/result",
+    element: renderLayout(<Result />),
+  },
+  {
+    path: "*",
     errorElement: <h1>Error page not found</h1>,
-    children: [
-      {
-        path: "/blinkist-tutorials",
-        element: renderLayout(<BlogsList />),
-      },
-      {
-        path: "/feature-toggles",
-        element: renderLayout(<FeatureVariationControl />),
-      },
-      {
-        path: "/result",
-        element: renderLayout(<Result />),
-      },
-      {
-        path: "*",
-        element: <Navigate to="/books-list" replace />,
-      },
-    ],
+    element: <Navigate to="/blinkist-tutorials" replace />,
   },
 ];
 
