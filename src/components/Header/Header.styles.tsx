@@ -1,10 +1,15 @@
 import styled from "styled-components";
 import { SmallTextBold } from "../Typography/Typography.styles";
+import { device } from "../../utils/cssBreakpoints";
 
 export const HeaderLogo = styled.img`
-  width: 10%;
-  padding: 0px 15px;
-  cursor: pointer;
+  width: 35%;
+
+  @media ${device.desktop} {
+    width: 10%;
+    padding: 0px 15px;
+    cursor: pointer;
+  }
 `;
 
 export const HeaderWrapper = styled.div`

@@ -1,7 +1,10 @@
 import styled from "styled-components";
+import { device } from "../../utils/cssBreakpoints";
 
 export const LayoutContent = styled.div`
-  width: 60%;
   margin: auto;
   padding-bottom: 10%;
+  @media ${device.desktop} {
+    width: 60%;
+  }
 `;
